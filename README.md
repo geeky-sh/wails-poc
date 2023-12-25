@@ -14,3 +14,10 @@ to this in your browser, and you can call your Go code from devtools.
 ## Building
 
 To build a redistributable, production mode package, use `wails build`.
+
+# POC Candidates
+
+## Configure Application Preferences from App
+### Relevant Files
+- `Settings.svelte` - This file contains the code for displaying forms and setting the value on the backend when it is submitted.
+- `config.go` - This file contains getter and setter functions for getting the project-level settings. It uses `xdg` standard to store configurations. The specific location, in this case, where the settings are stored is `~/Library/Application\ Support/wailspoc/config.json`. You can configure a different location depending on the type of setting you have. More info can be found [here](https://github.com/adrg/xdg)
