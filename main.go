@@ -18,6 +18,7 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
+	session := NewSession()
 
 	// Create application with options
 	err = wails.Run(&options.App{
@@ -32,6 +33,7 @@ func main() {
 		Bind: []interface{}{
 			app,
 			config,
+			session,
 		},
 	})
 

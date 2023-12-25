@@ -1,9 +1,6 @@
 <script>
-
     import { GetDocPath, SetDocPath } from "../wailsjs/go/main/Config";
-
     let docPath = "";
-
     function setDocPath() {
       console.log(docPath)
       SetDocPath(docPath).then(result => console.log("success"))
