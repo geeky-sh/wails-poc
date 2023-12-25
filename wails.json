@@ -9,5 +9,6 @@
   "author": {
     "name": "Aash",
     "email": "aash.discover@gmail.com"
-  }
+  },
+  "wailsjsdir": "./frontend/src/lib"
 }
